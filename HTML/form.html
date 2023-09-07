@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>latihan Form</title>
+</head>
+<body>
+	<h1>Formulir Siswa</h1>
+	<form action="daftar" method="post">
+		<table border="solid">	
+		<tr>
+		<th><label for="nama">Nama :</label></th>
+		<td><input type="text" name="nama" placeholder="Nama" id="nama"></td> 
+		</tr>
+		<tr>
+		<th><label for="email">Emal :</label></th>
+		<td><input type="email" name="email" placeholder="Email" id="email"> </td>
+		</tr>
+		<tr>
+		<th><label for="password">Password :</label></th>
+		<td><input type="password" name="password" placeholder="Password" id="password"> </td>
+		</tr>
+		<tr>
+		<th><label for="No Telp">No Telp :</label></th>
+		<td><input type="number" name="No Telp" placeholder="No Telp" id="No Telp"></td>
+		</tr>
+		<tr>
+		<th><label for="color">Color :</label></th>
+		<td><input type="color" name="color" placeholder="Warna" id="color"></td>
+		</tr>
+		<tr>
+			<th rowspan="2">Jenis Kelamin</th>
+			<td><input type="radio" name="JK" value="laki-laki" checked>Laki-Laki</td>
+		</tr>
+		<tr>
+			<td><input type="radio" name="JK" value="perempuan">Perempuan</td>
+		</tr>
+		<tr>
+			<td>Hobi</td>
+			<td><select>
+				<option>-</option>
+				<option>Badminton</option>
+				<option>Sepak Bola</option>
+				<option>Voly</option>
+			</select></td>
+		</tr>
+		<tr>
+			<th rowspan="2">Jenis Kelamin</th>
+			<td><input type="checkbox" name="JK" value="laki-laki" checked>Laki-Laki</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" name="JK" value="perempuan">Perempuan</td>
+		</tr>
+		<tr>
+			<th>Alamat</th>
+			<td><textarea cols="30" rows="10"></textarea></td>
+		</tr>
+		</table>
+		<button type="submit">Kirim</button>
+	</form>
+</body>
+</html>
